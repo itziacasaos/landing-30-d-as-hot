@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Días Hot - 50% Off | Propiedades.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00B159;
+            --primary-dark: #008a44;
+            --hot-red: #E63946;
+            --dark-color: #11322C;
+            --gray-light: #F8F9FA;
+            --gray-text: #6C757D;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--gray-light);
+            color: var(--dark-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-height: 42px;
+            width: auto;
+        }
+
+        .main-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 540px;
+            padding: 48px 32px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(230, 57, 70, 0.08);
+            text-align: center;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--hot-red), var(--primary-color));
+        }
+
+        .badge-hot {
+            display: inline-block;
+            background-color: rgba(230, 57, 70, 0.1);
+            color: var(--hot-red);
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .success-icon {
+            width: 72px;
+            height: 72px;
+            background-color: rgba(0, 177, 89, 0.1);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--gray-text);
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--hot-red);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.25);
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #d32f2f;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 13px;
+            color: var(--gray-text);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo2.png" alt="Propiedades.com">
+    </header>
+
+    <main class="main-container">
+        <div class="badge-hot">🔥 30 Días Hot • 50% Off</div>
+        <div class="success-icon">✓</div>
+        <h1>¡Gracias por registrarte!</h1>
+        <p>Aprovecha tu 50% de descuento en los 30 días hot de Propiedades.com. Un asesor te contactará muy pronto.</p>
+        <a href="https://crm.propiedades.com/plataforma-inmobiliaria" class="btn-primary" target="_blank" rel="noopener">Conoce más de la plataforma</a>
+    </main>
+
+    <footer>
+        © 2026 Propiedades.com — Todas las propiedades, en un solo lugar.
+    </footer>
+</body>
+</html>
